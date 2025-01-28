@@ -63,4 +63,11 @@
         height: 90%;
         color: var(--textColor);
     }
-       
+        .subtitle
+        {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        
