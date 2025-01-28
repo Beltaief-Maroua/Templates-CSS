@@ -82,8 +82,33 @@
                 margin-left:140px;
                 margin-top: -7px;
             }
-            .description
+        .description
+        {
+            width: 48%;
+            margin-bottom: 60px;
+        }
+        .something
+        {
+            background-color: var(--textColor);
+            color: #797470;
+            border-radius: 25px;
+            width: 500px;
+            height: 50px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 24px;
+        }
+            .search
             {
-                width: 48%;
-                margin-bottom: 60px;
+                text-transform: uppercase;
+                background-color: var(--orangeColor);
+                color: var(--textColor);
+                border-radius: 25px;
+                width: 150px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 206.5px;
             }
