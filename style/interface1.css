@@ -1,3 +1,14 @@
+.navbar, .menu, .liste, .liste li:first-child, main, .mainContent, .something, .search, .rightPart p:first-child, .rightPart p:nth-child(2)
+    {
+        display: flex;
+        align-items: center;
+        
+    }
+.liste li:first-child, main, .search, .rightPart p:first-child, .rightPart p:nth-child(2)
+{
+    justify-content: center;
+}
+
 .container
 {
     background-image: url("../images/banner-bg.jpg");
@@ -8,7 +19,6 @@
 }
     .navbar
     {
-        display: flex;
         justify-content: space-between;
         width: 100%;
     }
@@ -18,17 +28,13 @@
         }
         .menu
         {
-            display: flex;
             justify-content: space-around;
-            align-items: center;
             width: 57%;
         }
             .liste
             {
                 list-style-type: none;
-                display: flex;
                 justify-content: space-between;
-                align-items: center;
                 width: 70%;
                 color: var(--textColor);
                 text-transform: capitalize;
@@ -40,9 +46,6 @@
                     border-radius: 15px;
                     width: 80px;
                     height: 30px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                 }
             .signIn
             {
@@ -57,17 +60,12 @@
             }
     main
     {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 90%;
         color: var(--textColor);
     }
         .mainContent
         {
-            display: flex;
             justify-content: space-between;
-            align-items: center;
             width: 100%;
             height: 100%;
             padding-right: 35px;
@@ -103,9 +101,7 @@
                 border-radius: 25px;
                 width: 500px;
                 height: 50px;
-                display: flex;
                 justify-content: start;
-                align-items: center;
                 padding-left: 24px;
             }
                 .search
@@ -116,9 +112,6 @@
                     border-radius: 25px;
                     width: 150px;
                     height: 50px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     margin-left: 206.5px;
                 }
             .rightPart
@@ -138,9 +131,6 @@
                     font-size: 19px;
                     width: 60px;
                     height: 33px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     margin-top: 20px;
                     margin-left: 275px;
                 }
@@ -152,9 +142,6 @@
                     height: 90px;
                     font-size: 25px;
                     font-weight: 800;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     margin-top: 330px;
                     margin-left: -27px;
                 }
