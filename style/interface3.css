@@ -1,0 +1,36 @@
+.container
+{
+    background-color: var(--greyColor);
+    border-radius: 60px;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+    .subtitle{
+        color: var(--orangeColor);
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .titleBar
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+        .titleBar p
+        {
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        .viewAll
+        {
+            border: none;
+            padding-block: 10px;
+            padding-inline: 20px;
+            text-transform: uppercase;
+            color: var(--whiteColor);
+            background-color: var(--orangeColor);
+            border-radius: 25px;
+            font-weight: 600;
+        }
