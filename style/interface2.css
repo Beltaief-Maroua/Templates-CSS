@@ -2,59 +2,200 @@
 {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-    header
-    {
-        height: 30%;
-    }
-        .background
+        .content
         {
-            background-image: url("../images/page-heading-bg.jpg");
-            height: 40%;
-            border-radius: 0 0 100px 100px;
+            height: 85%;
+            width: 70%;
         }
-        .headerCards
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            column-gap: 30px;
-
-        }
-            .headerCard
+            .background
             {
-                width: 200px;
-                height: 140px;
-                background-color: #fff;
-                border-radius: 15px;
+                background-image: url("../images/page-heading-bg.jpg");
+                height: 12%;
+                width: 100%;
+                border-radius: 0 0 100px 100px;
+            }
+            .headerCards
+            {
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                row-gap: 10px;
-                position: relative;
-                top: -60px;
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                column-gap: 30px;
+                /* border: 3px solid blue; */
+                height: 20%;
             }
-                .image
+                .headerCard
                 {
-                    background-color: var(--blueColor);
+                    width: 200px;
+                    height: 140px;
+                    background-color: #fff;
+                    border-radius: 15px;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 60px;
-                    height: 60px;
-                    border-radius: 50%;
+                    row-gap: 10px;
+                    position: relative;
+                    top: -35px;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                 }
-                    .headerCard img
+                    .image
                     {
-                        width: 30px;
-                        height: 30px;
+                        background-color: var(--blueColor);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
                     }
-                    .headerCard p
+                        .headerCard img
+                        {
+                            width: 30px;
+                            height: 30px;
+                        }
+                        .headerCard p
+                        {
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            font-weight: 600;
+                        }
+        main
+        {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            height: 80%;
+            width: 100%;
+        }                
+            .title
+            {
+                text-transform: uppercase;
+                color: var(--orangeColor);
+                font-weight: 600;
+                font-size: 11px;
+                margin-top: 20px;
+                margin-bottom: -10px;
+            }
+            .titleBar
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+                .titleBar p
+                {
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    font-size: 25px;
+                }
+                .viewAll
+                {
+                text-transform: uppercase;
+                border: none;
+                background-color: var(--orangeColor);
+                color: var(--whiteColor);
+                padding: 10px;
+                border-radius: 30px;
+                width: 100px;
+                font-weight: 600;
+                }
+            .mainCards
+            {
+                display: flex;
+                justify-content: space-between;
+                height: 70%;
+                column-gap: 5px;
+            }
+                .mainCard
+                {
+                    background-color: var(--greyColor);
+                    width: 23%;
+                    border-radius: 15%;
+                }
+                .mainCard:first-child .backgroundCard, .mainCard:nth-child(2) .backgroundCard, .mainCard:nth-child(3) .backgroundCard, .mainCard:last-child .backgroundCard
+                {
+                    background-size: cover;
+                    border-radius: 15%;
+                    height: 66%;
+                }
+                .mainCard:first-child .backgroundCard
+                {
+                    background-image: url("../images/trending-01.jpg");
+                }
+                .mainCard:nth-child(2) .backgroundCard
+                {
+                    background-image: url("../images/trending-02.jpg");
+                }
+                .mainCard:nth-child(3) .backgroundCard
+                {
+                    background-image: url("../images/trending-03.jpg");
+                }
+                .mainCard:last-child .backgroundCard
+                {
+                    background-image: url("../images/trending-04.jpg");
+                }
+                    .price
                     {
-                        text-transform: uppercase;
-                        font-size: 13px;
+                        color: var(--whiteColor);
+                        display: flex;
+                        justify-content: end;
+                    }
+                        .price p
+                        {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            background-color: var(--blueColor);
+                            width: fit-content;
+                            margin: 10px;
+                            border-radius: 10px;
+                            width: 50px;
+                        }
+                            .mainCard:first-child span:first-child, .mainCard:nth-child(3) span:first-child
+                            {
+                                text-decoration: line-through;
+                                padding: 5px 5px 0 5px;
+                                font-size: 12px;
+                            }
+                            .mainCard:nth-child(2) span:first-child, .mainCard:last-child span:first-child
+                            {
+                                
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            span:last-child
+                            {
+                                padding: 0 5px 5px 5px;
+                                font-weight: 600;
+                            }
+            .cardContainer
+            {
+                padding: 15px;
+                position: relative;
+            }
+                .cardTitle
+                {
+                    color: #98969B;
+                }
+                .cardContent
+                {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                }
+                    .cardDescription
+                    {
                         font-weight: 600;
                     }
-                
+                    .icon
+                    {
+                        color: var(--whiteColor);
+                        background-color: var(--orangeColor);
+                        border-radius: 50%;
+                        padding: 10px;
+                    }
