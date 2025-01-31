@@ -180,7 +180,7 @@
             }
                 .cardTitle
                 {
-                    color: #98969B;
+                    color: var(--darkGreyColor);
                 }
                 .cardContent
                 {

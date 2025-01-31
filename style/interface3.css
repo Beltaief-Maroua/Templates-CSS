@@ -4,33 +4,124 @@
     border-radius: 60px;
     width: 100%;
     height: 100%;
-    padding: 100px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
-    .subtitle{
-        color: var(--orangeColor);
-        text-transform: uppercase;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-    .titleBar
+    header
     {
-        display: flex;
-        justify-content: space-between;
+        height: 30%;
     }
-        .titleBar p
-        {
-            text-transform: capitalize;
-            font-weight: 700;
-            font-size: 30px;
-        }
-        .viewAll
-        {
-            border: none;
-            padding-block: 10px;
-            padding-inline: 20px;
+        .subtitle{
+            color: var(--orangeColor);
             text-transform: uppercase;
-            color: var(--whiteColor);
-            background-color: var(--orangeColor);
-            border-radius: 25px;
             font-weight: 600;
+            margin-bottom: 20px;
         }
+        .titleBar
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+            .titleBar p
+            {
+                text-transform: capitalize;
+                font-weight: 700;
+                font-size: 30px;
+            }
+            .viewAll, .content button
+            {
+                border: none;
+                text-transform: uppercase;
+                color: var(--whiteColor);
+                background-color: var(--orangeColor);
+                border-radius: 25px;
+                font-weight: 600;
+            }
+            .viewAll
+            {
+                padding-block: 10px;
+                padding-inline: 20px;
+            }
+    main
+    {
+        height: 70%;
+    }
+        .mainCards
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            height: 100%;
+        }
+            .card
+            {
+                width: 15%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+                background-color: var(--whiteColor);
+                border-radius: 20px;
+                width: 140px;
+            }
+                .background
+                {
+                    height: 140px;
+                    width: 140px;
+                    border-radius: 20px;
+                    background-size: contain;
+                }
+                .card:first-child .background
+                {
+                    background-image: url("../images/top-game-01.jpg");
+                }
+                .card:nth-child(2) .background
+                {
+                    background-image: url("../images/top-game-02.jpg");
+                }
+                .card:nth-child(3) .background
+                {
+                    background-image: url("../images/top-game-03.jpg");
+                }
+                .card:nth-child(4) .background
+                {
+                    background-image: url("../images/top-game-04.jpg");
+                }
+                .card:nth-child(5) .background
+                {
+                    background-image: url("../images/top-game-05.jpg");
+                }
+                .card:last-child .background
+                {
+                    background-image: url("../images/top-game-06.jpg");
+                }
+                .content
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                    .content p:first-child
+                    {
+                        color: var(--darkGreyColor);
+                        text-transform: capitalize;
+                    }
+                    .content p:nth-child(2)
+                    {
+                        text-transform: capitalize;
+                        font-weight: 500;
+                    }
+                    .content button
+                    {
+                        border: none;
+                        padding-block: 5px;
+                        padding-inline: 15px;
+                        text-transform: uppercase;
+                        color: var(--whiteColor);
+                        background-color: var(--orangeColor);
+                        border-radius: 25px;
+                        font-weight: 600;
+                        position: relative;
+                        top: 15px;
+                    }
