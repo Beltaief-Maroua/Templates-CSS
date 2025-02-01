@@ -1,0 +1,73 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    row-gap: 20px;
+    padding: 30px;
+}
+    .title
+    {
+        text-transform: uppercase;
+        color: var(--orangeColor);
+        font-weight: 600;
+    }
+    .topCategories
+    {
+        text-transform: capitalize;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .categories
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 70%;
+        height: 80%;
+        column-gap: 10px;
+    }
+        .cards
+        {
+            background-color: var(--blueColor);
+            border-radius: 20px;
+            width: 16rem;
+            height: 16rem;
+        }
+            .action
+            {
+                text-align: center;
+                color: var(--whiteColor);
+                font-weight: 600;
+                text-transform: capitalize;
+                padding: 15px;
+            }
+            .background
+            {
+                background-size: cover;
+                width: 163px;
+                height: 202px;
+                border-radius: 20px;
+            }
+            .cards:first-child .background
+            {
+                background-image: url("../images/categories-01.jpg");
+            }
+            .cards:nth-child(2) .background
+            {
+                background-image: url("../images/categories-02.jpg");
+            }
+            .cards:nth-child(3) .background
+            {
+                background-image: url("../images/categories-03.jpg");
+            }
+            .cards:nth-child(4) .background
+            {
+                background-image: url("../images/categories-04.jpg");
+            }
+            .cards:last-child .background
+            {
+                background-image: url("../images/categories-05.jpg");
+            }
