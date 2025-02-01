@@ -54,6 +54,7 @@
             justify-content: space-between;
             align-items: start;
             height: 100%;
+            column-gap: 5px;
         }
             .card
             {
@@ -63,12 +64,13 @@
                 row-gap: 15px;
                 background-color: var(--whiteColor);
                 border-radius: 20px;
-                width: 140px;
+                width: 13rem;
             }
                 .background
                 {
-                    height: 140px;
-                    width: 140px;
+                    width: 11rem;
+                    height: 11rem;
+
                     border-radius: 20px;
                     background-size: contain;
                 }
